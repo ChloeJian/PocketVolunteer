@@ -51,6 +51,41 @@
           "pathName": "pages/updateRecordSuccess/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "ActivityManage",
+          "pathName": "pages/ActivityManage/ActivityManage",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "ActivityEnroll",
+          "pathName": "pages/ActivityEnroll/ActivityEnroll",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "volunteer",
+          "pathName": "pages/volunteer/volunteer",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/Home/Home",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/my/my",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }

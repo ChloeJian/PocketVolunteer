@@ -1,0 +1,61 @@
+<!--pages/ActivityDetail/ActivityDetail.wxml-->
+   <view>
+     <view class="detail-container">
+       <view class="detail-main">
+         <view class="detail-swiper">
+           <!-- 轮播图区域 -->
+           <!-- 之后获取数据之后改写为循环获取 -->
+           <swiper interval="1000" indicator-dots="true" autoplay="true" circular="true">
+             <swiper-item>
+               <image mode="widthFix" src="{{activity.activity_intro_pic}}"></image>
+             </swiper-item>
+             <swiper-item class="cri"> 
+               <image mode="widthFix" src="{{activity.activity_intro_pic}}"></image>
+             </swiper-item>
+               <swiper-item>
+                 <image mode="widthFix" src="{{activity.activity_intro_pic}}"></image>
+               </swiper-item>
+           </swiper>
+         </view>
+         
+         <view class="detail-info">
+           <view class="detail-title">
+            【{{activity.activity_name}}】 
+           </view>
+           <view class="info-date">
+             <view class="iconfont icon-riqi">
+                活动日期：{{activity.activity_start_time}}
+             </view>
+           </view>
+           <view class="info-number">
+             <view class="iconfont icon-tianjiayonghu">
+                招募人数：{{activity.activity_max_people}}
+             </view>
+           </view>
+           <view class="info-address">
+             <view class="iconfont icon-biaodiandidian">
+                综测分：{{activity.activity_credit}}
+             </view>
+           </view>
+           <view class="info-address">
+             <view class="iconfont icon-biaodiandidian">
+                志愿时长：{{activity.activity_hour}}
+             </view>
+           </view>
+         </view>
+         <!-- <view class="detail-service">
+           主办方:
+         </view> -->
+         <view class="detail-desc">
+           活动简介：{{activity.activity_intro_text}}
+         </view>
+         
+       <view class="detail-bar" > 
+         <view class="action_btn">
+           <button class="btn_add" bindtap="onEnrollTapHandler">立即报名</button>
+         </view>
+       </view>
+ 
+     </view>
+   </view>
+   </view> 

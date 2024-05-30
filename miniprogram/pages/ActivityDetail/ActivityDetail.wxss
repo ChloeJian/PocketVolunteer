@@ -1,0 +1,105 @@
+/* pages/ActivityDetail/ActivityDetail.wxss */
+.detail-container {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+}
+.detail-main {
+  width: 100%;
+  flex-grow: 1;
+  overflow: scroll;
+  background-color: rgba(235, 233, 233, 0.904);
+}
+swiper {
+  width: 100%;
+  height: calc(100vw * 327 /  491);
+}
+image {
+  width: 100%;
+}
+.detail-info {
+  width: 100%;
+  height: 130px;
+  background-color: white;
+}
+.detail-title {
+  margin-top: 5px;
+  width: 100%;
+  height: 20px;
+  color: black;
+  font-size: 20px;
+}
+.info-date {
+  margin-left: 10px;
+  width: 100%;
+  height: 20px;
+  margin-top: 5px;
+  font-size: 16px;
+}
+.info-number {
+    margin-left: 10px;
+  width: 100%;
+  height: 20px;
+  margin-top: 5px;
+  font-size: 16px;
+}
+.info-address {
+    margin-left: 10px;
+  width: 100%;
+  height: 20px;
+  margin-top: 5px;
+  font-size: 16px;
+}
+.detail-desc {
+  margin-top: 7px;
+  width: 100%;
+  min-height: 300px;
+  background-color: white;
+  font-size: 16px;
+}
+.detail-bar {
+  width: 100%;
+  height: 80px;
+  background-color: red;
+}
+
+.detail-bar{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 0rpx;
+  width: 100%;
+  height: 100rpx;
+  justify-content: space-around;
+  background-color: white;
+  align-content: center;
+  align-items: center;
+}
+
+
+.action_btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 80%;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-bottom: 10rpx;
+}
+.btn_add{
+  background-color:#3e86a0;
+  width: 100%;
+  height: 100%;
+  font-size: 30rpx;
+  color: white;
+  border-bottom-right-radius: 50rpx;
+  border-bottom-left-radius: 50rpx;
+  border-top-right-radius: 50rpx;
+  border-top-left-radius: 50rpx;
+}

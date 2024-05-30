@@ -1,0 +1,20 @@
+<!--pages/ActivityManage_Detail/ActivityManage_Detail.wxml-->
+<view class="activity">
+  <image src="{{activity.activity_intro_pic}}"></image>
+  <view>活动编号：{{activity.activity_id}}</view>
+  <view>活动名称：{{activity.activity_name}}</view>
+  <view>发布时间：{{activity.activity_create_time}}</view>
+  <view>开始时间：{{activity.activity_start_time}}</view>
+  <view>结束时间：{{activity.activity_end_time}}</view>
+  <view wx:if="{{activity.activity_check}}">是否已签到：已签到</view>
+  <view wx:else>是否已签到：未签到</view>
+  <view>综测分值：{{activity.activity_credit}}分</view>
+  <view>志愿时长：{{activity.activity_hour}}小时</view>
+  <view>当前报名人数：{{activity.activity_cur_people}}人</view>
+  <view>最大报名人数：{{activity.activity_max_people}}人</view>
+  <view>志愿活动简介：{{activity.activity_intro_text}}</view>
+  <button bindtap="gotoAMUpdate" data-a_id="{{activity._id}}">修改</button>
+  <button bindtap="onDeleteTapHandler" data-a_id="{{activity._id}}">删除</button>
+  <button wx:if="{{!activity.activity_check}}"  bindtap="signIn" data-a_id="{{activity._id}}" size="mini">发起签到</button>
+  <button wx:if="{{activity.activity_check}}"  bindtap="code" data-a_id="{{activity._id}}" size="mini">签到二维码</button>
+</view>

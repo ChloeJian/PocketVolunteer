@@ -1,0 +1,40 @@
+
+   <view>
+     <form bindsubmit="formSubmit">
+     <view class="info">
+       
+       
+       			<view class="fenjie"></view>
+       			<view class="uni-form-item uni-column user-input">
+       				<view class="title" >姓名</view>
+       				<view class="input">
+       					<input class="uni-input" bindinput="getName" placeholder="请输入姓名"/>
+       				</view>
+       			</view>
+             
+       			<view class="fenjie"></view>
+       			<view class="uni-form-item uni-column user-input">
+       				<view class="title">用户学号</view>
+       				<view class="input">
+       					<input class="uni-input" placeholder="请输入用户学号" bindinput="getnum"/>
+       				</view>
+       			</view>
+            <view class="fenjie"></view>
+             <view class="uni-form-item uni-column user-input">
+             	<view class="title">专业</view>
+             	<view class="input">
+             		<input class="uni-input" placeholder="请输入专业" bindinput="getzhuanye"/>
+             	</view>
+             </view>
+            <view class="fenjie"></view>
+
+     </view>
+     <view class="bar">
+       <button class="btn_add" form-type="submit">注册</button>
+     </view>
+       </form>
+   </view>
+
+
+
+

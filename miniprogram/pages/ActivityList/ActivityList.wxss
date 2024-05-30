@@ -1,0 +1,40 @@
+.activity {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  border: #ccc 1px solid;
+  width: 100%;
+  height: 230rpx;
+}
+
+.image {
+  width: 210rpx;
+  height: 170rpx;
+  margin-right: 20rpx;
+}
+
+.text-container {
+  margin-top: 5rpx;
+  flex: 1;
+  height: 100%;
+}
+
+.text-name {
+  font-size: 32rpx;
+  /* font-weight: bold; */
+  color: #000000;
+  margin-top: 5rpx;
+}
+
+.text-other {
+  font-size: 25rpx;
+  color: #666666;
+  margin-bottom: 10rpx;
+}
+.but {
+  /* font-weight: normal; */
+  font-size: 12rpx;
+}
+
+
+

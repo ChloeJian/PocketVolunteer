@@ -1,0 +1,50 @@
+<!-- <text>编辑个人信息</text>
+  <form bindsubmit="formSubmit">
+    <input type="text" name="volunteer_name" value="姓名为:{{individualData.volunteer_name}}"></input>
+    <input type="text" name="volunteer_stu_grade" value="年级为:{{individualData.volunteer_stu_grade}}"></input>
+    <input type="text" name="volunteer_stu_major" value="专业为:{{individualData.volunteer_stu_major}}"></input>
+  
+    <button form-type="submit" type="primary">保 存</button>
+  </form> -->
+  
+  
+<!--pages/ActivityManage_Create/ActivityManage__Create.wxml-->
+
+<!-- 1.发布活动 -->
+  
+   <view>
+     <form bindsubmit="formSubmit">
+     <view class="info">
+       
+       
+       			<view class="fenjie"></view>
+       			<view class="uni-form-item uni-column user-input">
+       				<view class="title" >姓名</view>
+       				<view class="input">
+       					<input class="uni-input" name="volunteer_name"  maxlength="30" placeholder="请输入姓名" value="{{personMsg.volunteer_name}}"/>
+       				</view>
+       			</view>
+             
+       			<view class="fenjie"></view>
+       			<view class="uni-form-item uni-column user-input">
+       				<view class="title">年级</view>
+       				<view class="input">
+       					<input class="uni-input" name="volunteer_stu_grade" maxlength="20" placeholder="请输入年级" value="{{personMsg.volunteer_stu_grade}}"/>
+       				</view>
+       			</view>
+            <view class="fenjie"></view>
+             <view class="uni-form-item uni-column user-input">
+             	<view class="title">专业</view>
+             	<view class="input">
+             		<input class="uni-input" name="volunteer_stu_major" maxlength="20" placeholder="请输入专业"  value="{{personMsg.volunteer_stu_major}}"/>
+             	</view>
+             </view>
+            <view class="fenjie"></view>
+
+     </view>
+     <view class="bar">
+       <button class="btn_add" form-type="submit">保存修改</button>
+     </view>
+       </form>
+   </view>
+

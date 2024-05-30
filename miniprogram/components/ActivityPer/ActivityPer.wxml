@@ -1,0 +1,97 @@
+<!-- 导航栏 -->
+<!-- <view class="nav">
+  <view class="nav-item" bindtap="showAll">全部活动</view>
+  <view class="nav-item" bindtap="showUnsigned">待签到活动</view>
+  <view class="nav-item" bindtap="showSigned">已签到活动</view>
+</view> -->
+<!--查询全部活动列表-->
+<!-- <view class="activity" wx:for="{{currentActivityList}}" wx:key="{{index}}">
+  <image src="{{item.activity_intro_pic}}" class="image"></image>
+  <view class="text-container">
+    <view class="text-name">{{item.activity_name}}</view>
+    <view class="text-other">{{item.activity_start_time}}~{{item.activity_end_time}}</view>
+    <view class="text-other">综测分值：{{item.activity_credit}}分</view>
+    <view class="text-other">志愿时长：{{item.activity_hour}}小时</view>
+    <button bindtap="gotoDetail" size="mini" data-a_id="{{item._id}}">详情：报名/取消</button>
+  </view>
+</view> -->
+<div>
+    <view class="mine-userinfo-container">
+      <image src="cloud://cloud1-1ggg6bk6e63161e3.636c-cloud1-1ggg6bk6e63161e3-1317593068/activity_intro/1684642512128.png" class="back_img"></image>
+    <!-- 头像昵称区域 -->
+        <view class="top-box">
+          <!-- <image src="/images/background.png" class="avatar"></image> -->
+          <view class="nickname">欢迎您，{{ Data.userInfo.volunteer_name }}</view>
+        </view>
+  </view>
+  
+  <!-- 面板的列表区域 -->
+  <view class="panel-list">
+    <!-- 第一个面板 -->
+    <view class="panel">
+      <!-- panel 的主体区域 -->
+      <view class="panel-body">
+        <!-- panel 的 item 项 -->
+        <view class="panel-item">
+          <text>{{ Data.userInfo.volunteer_stu_major }}</text>
+          <text>专业</text>
+        </view>
+        <view class="panel-item">
+          <text>{{Data.userInfo.volunteer_credit }}</text>
+          <text>综测分数</text>
+        </view>
+        <view class="panel-item">
+          <text>{{ Data.userInfo.volunteer_hour }}</text>
+          <text>志愿时长</text>
+        </view>
+        <view class="panel-item">
+          <text>{{ Data.userInfo.volunteer_reputation }}</text>
+          <text>信誉度</text>
+        </view>
+      </view>
+    </view>
+    
+  
+    <!-- 第二个面板 -->
+  <view class="panel">
+    <!-- 面板的标题 -->
+    <view class="panel-title" >我的活动</view>
+    <!-- 面板的主体 -->
+    <view class="panel-body">
+      <!-- 面板主体中的 item 项 -->
+      <view class="panel-item"  bindtap="goToAllActivity">
+        <image src="/images/my-icons/icon1.png" class="icon"></image>
+        <text>全部活动</text>
+      </view>
+      <view class="panel-item" bindtap="goToUnsignedActivity">
+        <image src="/images/my-icons/icon2.png" class="icon"></image>
+        <text >待签到活动</text>
+      </view>
+      <view class="panel-item"  bindtap="goToSignedActivity">
+        <image src="/images/my-icons/icon3.png" class="icon"></image>
+        <text>已签到活动</text>
+      </view>
+      <!-- <view class="panel-item">
+        <image src="/static/my-icons/icon4.png" class="icon"></image>
+        <text>全部订单</text>
+      </view> -->
+    </view>
+  </view>
+    <!-- 第三个面板 -->
+  <view class="panel">
+    <view class="panel-list-item" bindtap="goToEditMsg">
+      <text>修改个人信息</text>
+      <uni-icons type="arrowright" size="15"></uni-icons>
+    </view>
+    <view class="panel-list-item" bindtap="showTel">
+      <text>联系客服</text>
+      <uni-icons type="arrowright" size="15"></uni-icons>
+    </view>
+    <view class="panel-list-item" bindtap="exitLogin">
+      <text>退出登录</text>
+      <uni-icons type="arrowright" size="15"></uni-icons>
+    </view>
+  </view>
+  
+  </view>
+  </div>

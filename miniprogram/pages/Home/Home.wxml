@@ -1,0 +1,130 @@
+<view>
+<!--  <homeSearch @click="gotoSearch"></homeSearch> -->
+  <view class="swiperBox">
+        <!-- 轮播图区域 -->
+    <swiper  autoplay="true" interval="2000" circular="true">
+      <!-- 循环渲染轮播图的item项 -->
+      <swiper-item bindtap="goToSwiperDetail1">
+        <!-- url中存放/subpkg路径下的活动详情界面 -->
+        <navigator class="swiper-item">
+          <!-- 动态绑定图片的src属性 -->
+          <image src="cloud://cloud1-1ggg6bk6e63161e3.636c-cloud1-1ggg6bk6e63161e3-1317593068/activity_intro/1684502219973.png"></image>
+        </navigator>
+      </swiper-item>
+      
+      <swiper-item bindtap="goToSwiperDetail2">
+        <!-- url中存放/subpkg路径下的活动详情界面 -->
+        <navigator class="swiper-item">
+          <!-- 动态绑定图片的src属性 -->
+          <image src="cloud://cloud1-1ggg6bk6e63161e3.636c-cloud1-1ggg6bk6e63161e3-1317593068/activity_intro/1684502537534.png"></image>
+        </navigator>
+      </swiper-item>
+      
+      <swiper-item bindtap="goToSwiperDetail3">
+        <!-- url中存放/subpkg路径下的活动详情界面 -->
+        <navigator class="swiper-item">
+          <!-- 动态绑定图片的src属性 -->
+          <image src="cloud://cloud1-1ggg6bk6e63161e3.636c-cloud1-1ggg6bk6e63161e3-1317593068/activity_intro/1684502259862.png"></image>
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+  
+  
+  <view class="newNoticeBox">
+    <view class="newNoticePicBox">
+      <image class="newNoticePic" src="../../images/home-icons/notification.png"></image>
+    </view>
+    
+    <swiper class="swiper_notice" vertical="true" autoplay="true" circular="true" interval="2000">
+      <swiper-item>
+        <view class="textBox" bindtap="goToMsgDetaiil1">
+          <view class="swiper_notice_text">爱心集市志愿活动</view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class="textBox" bindtap="goToMsgDetaiil2">
+          <view class="swiper_notice_text">市东医院志愿活动</view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class="textBox" bindtap="goToMsgDetaiil3">
+          <view class="swiper_notice_text">马拉松志愿活动</view>
+        </view>
+      </swiper-item>
+    </swiper>
+    
+    <!-- bindtap="goMore" -->
+  </view>
+  
+  <view class="volActBox">
+    <view class="volActTop">
+        <view class="textBox">
+          志愿项目
+        </view>
+        <!-- bindtap="goMore" -->
+        <view class="goMoreAct" bindtap="goToActivityList">
+          更多 >
+      </view>
+    </view>
+    
+      <scroll-view class="volActMain" style="height: 700rpx;" scroll-y="true" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll">
+
+<!--       <view class="volActItem" wx:for="{{allActivity}}" wx:key="{{index}}">
+       <view class="volActImage">
+            <image src="{{item.activity_intro_pic}}"></image>
+          </view>
+          <view class="volActMsg">
+            <view class="volActMsgItem">活动名称：{{item.activity_name}}</view>
+            <view class="volActMsgItem">{{item.activity_start_time}}~{{item.activity_end_time}}</view>
+            <view class="volActMsgItem">综测分值：{{item.activity_credit}}分</view>
+            <view class="volActMsgItem">志愿时长：{{item.activity_hour}}小时</view>
+          </view> -->
+<view class="volActItem"  wx:for="{{activityList}}" wx:key="{{index}}">
+  <view class="volActImage">
+  <image src="{{item.activity_intro_pic}}"></image>
+  </view>
+  <view class="volActMsg">
+    <view class="volActMsgItem">{{item.activity_name}}</view>
+    <view class="volActMsgItem">{{item.activity_start_time}}-{{item.activity_end_time}}</view>
+    <view class="volActMsgItem">综测分值：{{item.activity_credit}}分</view>
+    <view class="volActMsgItem">志愿时长：{{item.activity_hour}}小时</view>
+    <view class="volActMsgItem">
+      <button class="but" bindtap="gotoDetail" size="mini" data-a_id="{{item._id}}">点击进入详情>></button>
+    </view>
+    
+  </view>
+</view>
+<!--          
+        
+        <view class="volActItem">
+          <view class="volActImage">
+            <image src="../../images/uni.png"></image>
+          </view>
+          <view class="volActMsg">
+            <view class="volActMsgItem">活动名称：123123</view>
+            <view class="volActMsgItem">活动名称：123123</view>
+              <view class="volActMsgItem">活动名称：123123</view>
+          </view>
+          
+          
+        </view>
+        <view class="volActItem">
+          <view class="volActImage">
+            <image src="../../images/uni.png"></image>
+          </view>
+          <view class="volActMsg">
+            <view class="volActMsgItem">活动名称：123123</view>
+            <view class="volActMsgItem">活动名称：123123</view>
+              <view class="volActMsgItem">活动名称：123123</view>
+          </view>
+          
+          
+        </view> -->
+        
+        
+      </scroll-view>
+    
+  </view>
+  
+</view>

@@ -1,0 +1,75 @@
+<!--pages/ActivityManage_Create/ActivityManage__Create.wxml-->
+
+<!-- 1.发布活动 -->
+  
+   <view>
+     <form bindsubmit="formSubmit">
+     <view class="info">
+       
+       
+       			<view class="fenjie"></view>
+       			<view class="uni-form-item uni-column user-input">
+       				<view class="title" >活动标题</view>
+       				<view class="input">
+       					<input class="uni-input" name="activity_name"  maxlength="30" placeholder="请输入活动标题" />
+       				</view>
+       			</view>
+             
+       			<view class="fenjie"></view>
+       			<view class="uni-form-item uni-column user-input">
+       				<view class="title">开始时间</view>
+       				<view class="input">
+       					<input class="uni-input" name="activity_start_time" maxlength="20" placeholder="请输入活动举办时间" />
+       				</view>
+       			</view>
+            <view class="fenjie"></view>
+             <view class="uni-form-item uni-column user-input">
+             	<view class="title">结束时间</view>
+             	<view class="input">
+             		<input class="uni-input" name="activity_end_time" maxlength="20" placeholder="请输入活动举办时间" />
+             	</view>
+             </view>
+       			<view class="fenjie"></view>
+       			<view class="uni-form-item uni-column user-input">
+       				<view class="title">活动人数</view>
+       				<view class="input">
+       					<input class="uni-input" name="activity_max_people" type="number" maxlength="11" placeholder="请输入志愿者招募人数" />
+       				</view>
+       			</view>
+       			<view class="fenjie"></view>
+       			<view class="uni-form-item uni-column user-input">
+       				<view class="title">志愿时长</view>
+       				<view class="input">
+       					<input class="uni-input" name="activity_hour" maxlength="50" placeholder="请输入负责人联系电话" />
+       				</view>
+       			</view>
+       			<view class="fenjie"></view>
+       			<view class="uni-form-item uni-column user-input">
+       				<view class="title">综测分值</view>
+       				<view class="input">
+       					<input class="uni-input" name="activity_credit" maxlength="30" placeholder="请输入负责人邮箱" />
+       				</view>
+       			</view>
+       			<view class="fenjie"></view>
+       			<view class="uni-form-item uni-column user-input">
+       				<view class="title">活动简介</view>
+       				<view class="input">
+       					<input name="activity_intro_text" class="uni-input" maxlength="200" placeholder="请输入活动简介" />
+       				</view>
+       			</view>
+            <view class="fenjie"></view>
+            
+            <view class="uni-form-item uni-column user-input">
+            	<view class="title">上传图片</view>
+            	</view>
+            <view class="imgBox" bindtap="onChooseTapHandler">
+                <view>
+                  <image class="img" src="{{filePath}}" mode="aspectFit"></image>
+                </view>
+            </view>
+     </view>
+     <view class="bar">
+       <button class="btn_add" form-type="submit">发布活动</button>
+     </view>
+       </form>
+   </view>

@@ -1,0 +1,106 @@
+/* pages/regist/regist.wxss */
+/* pages/EditMsg/EditMsg.wxss */
+  page {
+      background: #EFF4FF;
+  }
+  .title {
+    width: 200rpx;
+    height: 20rpx;
+    margin-left: 10rpx;
+  }
+  
+  .imgBox {
+      font-size: 28rpx;
+      margin: 3%;
+      background: white;
+      padding: 30rpx;
+      border-radius: 30rpx;
+      display: flex;
+      align-items: center;
+  }
+  
+  .imgContant {
+      margin-left: 40rpx;
+  }
+
+  .user-input{
+  	width: 335px;
+  	margin: 20px auto;
+  	display: flex;
+  }
+  .user-input .input{
+  	width: 280px;
+  	margin-left: 20px;
+  }
+  
+  .fenjie{
+  	width: 335px;
+  	height: 1px;
+  	background: #ddd;
+  	margin: 0 auto;
+  }
+  
+  .up-button{
+  	width: 160px;
+  	height:40px;
+  	background: #488ac7;
+  	border-radius: 4px;
+  	font-size: 16px;
+  	line-height: 40px;
+  	color: white;
+  	margin-top: 30px;
+  }
+  
+  .notes{
+  	width: 335px;
+  	margin: 20px auto 50px;
+  	font-size: 14px;
+  }
+  .notes span{
+  		color: red;
+  		margin-right: 4px;
+  }
+  .notes p{
+  		color: #999;
+  }
+.imgBox {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+  
+.bar{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 0rpx;
+  width: 100%;
+  height: 80rpx;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  margin-left: 35rpx;
+  margin-bottom: 10rpx;
+}
+.btn_add{
+  background-color:#1AAD19;
+  width: 100%;
+  height: 100%;
+  font-size: 30rpx;
+  color: white;
+  border-bottom-right-radius: 50rpx;
+  border-bottom-left-radius: 50rpx;
+  border-top-right-radius: 50rpx;
+  border-top-left-radius: 50rpx;
+}

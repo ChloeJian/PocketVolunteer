@@ -1,0 +1,13 @@
+<!--pages/indivadual/individual.wxml-->
+<text>编辑个人信息</text>
+<form bindsubmit="formSubmit">
+  <input type="text" name="volunteer_credit" value="{{individualData.volunteer_credit}}"></input>
+  <input type="text" name="volunteer_hour" value="{{individualData.volunteer_hour}}"></input>
+  <input type="text" name="volunteer_name" value="{{individualData.volunteer_name}}"></input>
+  <input type="text" name="volunteer_reputation" value="{{individualData.volunteer_reputation}}"></input>
+  <input type="text" name="volunteer_stu_grade" value="{{individualData.volunteer_stu_grade}}"></input>
+  <input type="text" name="volunteer_stu_id" value="{{individualData.volunteer_stu_id}}"></input>
+  <input type="text" name="volunteer_stu_major" value="{{individualData.volunteer_stu_major}}"></input>
+
+  <button form-type="submit" type="primary">保 存</button>
+</form>

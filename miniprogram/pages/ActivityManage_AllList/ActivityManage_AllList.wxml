@@ -1,0 +1,18 @@
+<!--pages/ActivityManage/ActivityManage.wxml-->
+<!-- 导航栏 -->
+<view class="nav">
+  <view class="nav-item" bindtap="showAll">全部活动</view>
+  <view class="nav-item" bindtap="showUnsigned">待签到活动</view>
+  <view class="nav-item" bindtap="showSigned">已签到活动</view>
+</view>
+<!-- 查询全部活动列表 -->
+<view class="activity" wx:for="{{currentActivityList}}" wx:key="{{index}}">
+    <image src="{{item.activity_intro_pic}}" class="image"></image>
+    <view class="text-container">
+      <view class="text-name">{{item.activity_name}}</view>
+      <view class="text-other">{{item.activity_start_time}}-{{item.activity_end_time}}</view>
+      <view class="text-other">综测分值：{{item.activity_credit}}分</view>
+      <view class="text-other">志愿时长：{{item.activity_hour}}小时</view>
+      <button class="but" bindtap="gotoAMDetail" size="mini" data-a_id="{{item._id}}">点击进入详情>></button>
+  </view>
+</view>

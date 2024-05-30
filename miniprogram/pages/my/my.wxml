@@ -1,0 +1,17 @@
+<!--pages/my/my.wxml-->
+<block wx:if="{{identity === ''}}">
+<view class="login-container">
+  <image src="/images/皇冠用户.png" class="contact-filled" mode="widthFix"></image>
+  <button class="btn-login" bindtap="login">一键登录</button>
+  <button class="btn-login" bindtap="adminlogin">管理员登录</button>
+  <text class="tip-text">登录后尽享更多权益</text>
+</view>
+</block>
+
+<block wx:if="{{identity === 'user'}}">
+  <ActivityPer myProp="{{Data}}" bind:changeValue="handleChangeValue"></ActivityPer>
+</block>
+
+<block wx:if="{{identity === 'admin'}}">
+  <Adminer myProp="{{AdData}}" bind:changeValue="handleChangeValue"></Adminer>
+</block>

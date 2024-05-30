@@ -1,0 +1,47 @@
+<!--pages/ActivityManage_Update/ActivityManage_Update.wxml-->
+<!-- 修改活动 -->
+<form bindsubmit="formSubmit">
+<view class="input-group">
+<text class="label">活动ID：</text>
+<input name="activity_id" type="text" value="{{activity.activity_id}}" />
+</view>
+<view class="input-group">
+<text class="label">活动名称：</text>
+<input name="activity_name" type="text" value="{{activity.activity_name}}" />
+</view>
+<view class="input-group">
+<text class="label">开始时间：</text>
+<input name="activity_start_time" type="text" value="{{activity.activity_start_time}}"/>
+</view>
+<view class="input-group">
+<text class="label">结束时间：</text>
+<input name="activity_end_time" type="text" value="{{activity.activity_end_time}}"/>
+</view>
+<view class="input-group">
+<text class="label">综测分值：</text>
+<input name="activity_credit" type="number" value="{{activity.activity_credit}}" />
+</view>
+<view class="input-group">
+<text class="label">志愿时长：</text>
+<input name="activity_hour" type="number" value="{{activity.activity_hour}}" />
+</view>
+<view class="input-group">
+<text class="label">最大参与人数：</text>
+<input name="activity_max_people" type="number" value="{{activity.activity_max_people}}" />
+</view>
+<view class="button-group">
+<button bindtap="onChooseTapHandler">上传图片</button>
+</view>
+<view>
+<image class=".img" wx:if="{{filePath}}" src="{{filePath}}"></image>
+<image class=".img" wx:else src="{{activity.activity_intro_pic}}"></image>
+</view>
+<view class="input-group">
+<text class="label">活动文字简介：</text>
+<input name="activity_intro_text" type="text" value="{{activity.activity_intro_text}}"/>
+</view>
+<view class="button-group">
+<button form-type="submit">保存修改</button>
+</view>
+</form>
+

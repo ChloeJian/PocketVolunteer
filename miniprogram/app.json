@@ -1,29 +1,53 @@
 {
   "pages": [
-    "pages/ActivityEnroll/ActivityEnroll",
+    "pages/ActivityList/ActivityList",
+    "pages/ActivityDetail/ActivityDetail",
     "pages/ActivityPer/ActivityPer",
-    "pages/ActivityManage/ActivityManage"
+    "pages/ActivityManage/ActivityManage",
+    "pages/ActivityManage_Create/ActivityManage_Create",
+    "pages/ActivityManage_AllList/ActivityManage_AllList",
+    "pages/ActivityManage_Detail/ActivityManage_Detail",
+    "pages/ActivityManage_Update/ActivityManage_Update",
+    "pages/admin/admin",
+    "pages/individual/individual",
+    "pages/volunteer/volunteer",
+    "pages/AllActivity/AllActivity",
+    "pages/EditMsg/EditMsg",
+    "pages/Home/Home",
+    "pages/my/my",
+    "pages/regist/regist",
+    "pages/code/code"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F00",
-    "navigationBarTitleText": "简畅负责的3个功能模块",
+    "navigationBarBackgroundColor": "#1AAD19",
+    "navigationBarTitleText": "口袋志愿",
     "navigationBarTextStyle": "white"
   },
 "tabBar": {
   "color": "#ccc",
-  "selectedColor": "#f00",
-  "list": [{
-    "pagePath": "pages/ActivityEnroll/ActivityEnroll",
-    "text": "活动报名"
-  },{
-    "pagePath": "pages/ActivityPer/ActivityPer",
-    "text": "活动管理"
-  },{
+  "selectedColor": "#1AAD19",
+  "list": [
+  {
+    "pagePath": "pages/Home/Home",
+    "iconPath": "images/tab_icons/home.png",
+    "selectedIconPath": "images/tab_icons/home-active.png",
+    "text": "首页"
+  },
+  {
     "pagePath": "pages/ActivityManage/ActivityManage",
-    "text": "个人活动统计"
-  }]
+    "iconPath": "images/tab_icons/signIn.png",
+    "selectedIconPath": "images/tab_icons/signIn-active.png",
+    "text": "签到"
+  },
+  {
+    "pagePath": "pages/my/my",
+    "iconPath": "images/tab_icons/mine.png",
+    "selectedIconPath": "images/tab_icons/mine-active.png",
+    "text": "个人中心"
+  }
+]
 },
   "sitemapLocation": "sitemap.json",
   "style": "v2"

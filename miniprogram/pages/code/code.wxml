@@ -1,0 +1,3 @@
+<!--pages/code/code.wxml-->
+<canvas type="2d" style="width: 260px; height: 260px;" id="myQrcode"></canvas>
+

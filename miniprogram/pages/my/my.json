@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+      "ActivityPer": "/components/ActivityPer/ActivityPer",
+      "Adminer": "/components/Adminer/Adminer"
+    }
+}
